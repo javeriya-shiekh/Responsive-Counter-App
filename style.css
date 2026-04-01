@@ -1,0 +1,105 @@
+#main{
+    background-color: whitesmoke;
+    border: 2px solid black;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 25px;
+    margin: 200px auto 20px auto; 
+    top: 0;
+    height: auto;
+    padding: 70px 10px;
+    position: relative;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{    
+    font-family: "Kavoon", serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#plus{
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#minus{
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset{
+    background-color: grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button{
+    width: 6rem;
+    height: 2rem;
+    border-style: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    width: 6rem;
+    height: 2.5rem; /* Slightly taller for mobile thumbs */
+    margin: 5px;   /* Space between buttons */
+    border-style: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover{
+    color: black;
+    border: 1px solid black;
+}
+
+#main{
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#main.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+#main.dark-mode button {
+    color: white;
+    border: 1px solid #555;
+}
+
+#main.dark-mode button:hover{
+    color: black;
+    border: 1px solid white;
+}
+
+#theme-toggle{
+    top: 270px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: black;
+
+    display: block;
+    margin: 20px auto;
+    position: static;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    button {
+        width: 80%; /* Full width buttons on tiny screens */
+        margin-bottom: 10px;
+    }
+}
